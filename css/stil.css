@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -9,29 +10,25 @@
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main main right'
+	'myArea myArea myArea myArea myArea myArea'
+    'left main main main main right'
     'footer footer footer footer footer footer';
-  gap: 10px;
-  background-color: white;
-  padding: 10px;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
 }
 
 .naslov{
 	grid-area: header;
-	position: absolute;
-    top: 0px;
-    right: 650px;
 	margin: auto;
-    width: 50%;
+    width: 100%;
     padding: 10px;
 	height: auto;
 	
 }
 
 .podnaslov{
-	position: absolute;
-    top: 170px;
-    right: 650px;
+	grid-area: myArea;
 	margin: auto;
     width: 50%;
     padding: 10px;
@@ -40,18 +37,13 @@
 
 .tekst{
 	grid-area: main;
-	position: absolute;
-    top: 250px;
-    right: 650px;
 	margin: auto;
-    width: 50%;
+    width: 100%;
     padding: 10px;
 	height: auto;
 }
 .link{
-	position: absolute;
-    top: 1200px;
-    right: 650px;
+	grid-area: footer;
 	margin: auto;
     width: 50%;
     padding: 10px;
@@ -59,25 +51,25 @@
 }
 
 .slika1{
-	position: absolute;
-    top: 300px;
-    right: 1100px;
+	grid-area: left;
 	margin: auto;
-    width: 50%;
+    width: 10%;
     padding: 10px;
 	height: auto;
 	transform: rotate(-25deg);
+	max-width: 10%;
+    height: auto;
 }
 
 .slika2{
-	position: absolute;
-    top: 400px;
-    right: -500px;
+	grid-area: right;
 	margin: auto;
-    width: 50%;
+    width: 10%;
     padding: 10px;
 	height: auto;
 	transform: rotate(25deg);
+	max-width: 10%;
+    height: auto;
 }
 
 h1 {
@@ -85,7 +77,7 @@ h1 {
     font-family: "Oi", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 130px;
+    font-size: 110px;
     text-align: center;
 }
 
