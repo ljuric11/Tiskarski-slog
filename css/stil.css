@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.naslov{
+	grid-area: header;
+	position: absolute;
+    top: 0px;
+    right: 650px;
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+	height: auto;
+	
+}
+
+.podnaslov{
+	position: absolute;
+    top: 170px;
+    right: 650px;
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+	height: auto;
+}
+
+.tekst{
+	grid-area: main;
+	position: absolute;
+    top: 250px;
+    right: 650px;
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+	height: auto;
+}
+.link{
+	position: absolute;
+    top: 1200px;
+    right: 650px;
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+	height: auto;
+}
+
+.slika1{
+	position: absolute;
+    top: 300px;
+    right: 1100px;
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+	height: auto;
+	transform: rotate(-25deg);
+}
+
+.slika2{
+	position: absolute;
+    top: 400px;
+    right: -500px;
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+	height: auto;
+	transform: rotate(25deg);
+}
+
+h1 {
+    color: deeppink;
+    font-family: "Oi", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 130px;
+    text-align: center;
+}
+
+h2{
+	font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:"wdth" 100;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+}
+
+p{
+	font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:"wdth" 100;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+}
+
+a {
+	color: deeppink;
+    font-family: "Oi", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+}
